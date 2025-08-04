@@ -127,3 +127,55 @@ footer {
     margin-top: 0.5rem;
   }
 }
+
+/* ✅ 新增付款與 Telegram 區塊樣式 */
+.payment-section {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 2rem 1rem;
+  max-width: 600px;
+  background-color: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.payment-section h2 {
+  color: #e25e75;
+  margin-bottom: 1rem;
+}
+
+.payment-section p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.payment-buttons .button,
+.payment-section .button {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.paypal-button {
+  background-color: #0070ba;
+  color: white;
+}
+
+.paypal-button:hover {
+  background-color: #005c9e;
+}
+
+.telegram-button {
+  background-color: #229ED9;
+  color: white;
+}
+
+.telegram-button:hover {
+  background-color: #178bbb;
+}
