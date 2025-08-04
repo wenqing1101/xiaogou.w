@@ -165,7 +165,6 @@
 
 <section id="home" class="hero">
   <div class="container">
-    <!-- 這裡替換成你的訂閱會員文案 -->
     <h2>歡迎來到 xiaogou.w 小狗的可愛宇宙！</h2>
     <p style="font-size:1.2rem; color:#555; max-width:600px; margin:1rem auto;">
       只要參與訂閱我們的頻道會員，即可免費獲得各式可愛頭像、手機與電腦壁紙，還有簡筆畫素描，並持續不斷更新，陪伴你的每一天。  
@@ -265,9 +264,9 @@
   <ul style="margin-top:1.5rem; text-align:center; list-style:none; padding:0;">
     <li>Instagram：<a href="https://instagram.com/xiaogou.w" target="_blank" rel="noopener">@xiaogou.w</a></li>
   </ul>
-<a href="https://t.me/xiaogouw99" target="_blank" rel="noopener" class="social-button">
+<a href="https://t.me/xiaogouw99" target="_blank" rel="noopener" class="social-button" style="display:block; text-align:center; margin-top:1rem; color:#e25e75; font-weight:bold; text-decoration:none;">
      Telegram：@xiaogouw99
-    </a>
+</a>
   </section>
 
   <footer>
@@ -288,30 +287,41 @@
     document.getElementById('translateBtn').addEventListener('click', function() {
       var htmlTag = document.documentElement;
       var isEnglish = htmlTag.lang === 'en';
+      var btn = this;
 
       if (!isEnglish) {
         var select = document.querySelector('select.goog-te-combo');
         if (!select) {
+          // 初始化控件
           new google.translate.TranslateElement({
             pageLanguage: 'zh-TW',
             includedLanguages: 'en',
             layout: google.translate.TranslateElement.InlineLayout.SIMPLE
           }, 'google_translate_element');
-        }
-        select = document.querySelector('select.goog-te-combo');
-        if (select) {
+
+          // 等待控件生成
+          setTimeout(function() {
+            var selectAfter = document.querySelector('select.goog-te-combo');
+            if (selectAfter) {
+              selectAfter.value = 'en';
+              selectAfter.dispatchEvent(new Event('change'));
+              htmlTag.lang = 'en';
+              btn.textContent = '原文 (繁體中文)';
+            }
+          }, 500);
+        } else {
           select.value = 'en';
           select.dispatchEvent(new Event('change'));
           htmlTag.lang = 'en';
-          this.textContent = '原文 (繁體中文)';
+          btn.textContent = '原文 (繁體中文)';
         }
       } else {
-        location.reload(); // 重新加载回繁体中文
+        location.reload(); // 刷新回繁体中文
       }
     });
   </script>
 
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
