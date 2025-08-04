@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xiaogou.w</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans TC", sans-serif;
+    }
+
+    body {
+      background-color: #fffafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffeef2;
+      padding: 1rem 0;
+      border-bottom: 1px solid #f3c6cc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      color: #ff6d8a;
+    }
+
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ff6d8a;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 4rem 1rem;
+      background-color: #fff0f5;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: #e25e75;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .gallery {
+      padding: 3rem 1rem;
+      background-color: #fff;
+    }
+
+    .gallery h2 {
+      text-align: center;
+      color: #e25e75;
+      margin-bottom: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .about {
+      background-color: #fffafc;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .about h2 {
+      color: #e25e75;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      margin-bottom: 1rem;
+    }
+
+    .about ul {
+      list-style: none;
+    }
+
+    .about li {
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      background-color: #ffeef2;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      header .container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+ <header>
+  <div class="container">
+    <h1>xiaogou.w</h1>
+    <nav>
+      <a href="#home">首頁</a>
+      <a href="#avatars">頭貼</a>
+      <a href="#couple">情侶頭貼</a>
+      <a href="#wallpapers">手機壁紙</a>
+      <a href="#pcwallpapers">電腦壁紙</a>
+      <a href="#sketches">簡筆畫素描</a>
+      <a href="#about">關於我</a>
+    </nav>
+  </div>
+ <div class="telegram-contact" style="background:#e25e75; color:#fff; text-align:center; padding:0.5rem;">
+  訂閱請聯絡 Telegram：
+  <a href="https://t.me/xiaogouw99" target="_blank" rel="noopener" style="color:#fff; font-weight:bold; text-decoration:underline;">
+    @xiaogouw99
+  </a>
+</div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <!-- 這裡替換成你的訂閱會員文案 -->
+    <h2>歡迎來到 xiaogou.w 小狗的可愛宇宙！</h2>
+    <p style="font-size:1.2rem; color:#555; max-width:600px; margin:1rem auto;">
+      只要參與訂閱我們的頻道會員，即可免費獲得各式可愛頭像、手機與電腦壁紙，還有簡筆畫素描，並持續不斷更新，陪伴你的每一天。  
+      讓你的數位生活更加繽紛有趣，專屬你的專屬美學，盡在 xiaogou.w！
+    </p>
+  </div>
+</section>
+
+<section id="avatars" class="gallery">
+  <h2>🐶 一張頭貼，一點個性</h2>
+  <p style="text-align:center; color:#555; margin-bottom:1.5rem;">專屬風格，讓你的社群瞬間有記憶點（已更新98張）</p>
+  <div class="grid">
+    <img src="img/avatar1.png" alt="頭貼1" />
+    <img src="img/avatar2.png" alt="頭貼2" />
+    <img src="img/avatar3.png" alt="頭貼3" />
+    <img src="img/avatar4.png" alt="頭貼4" />
+    <img src="img/avatar5.png" alt="頭貼5" />
+    <img src="img/avatar6.png" alt="頭貼6" />
+    <img src="img/avatar7.png" alt="頭貼7" />
+    <img src="img/avatar8.png" alt="頭貼8" />
+    <img src="img/avatar9.png" alt="頭貼9" />
+    <img src="img/avatar10.png" alt="頭貼10" />
+  </div>
+</section>
+
+<section id="couple" class="gallery">
+  <h2>💑 你有我，我有你</h2>
+  <p style="text-align:center; color:#555; margin-bottom:1.5rem;">兩張一對，給情侶的默契搭配圖（已更新100組）</p>
+  <div class="grid">
+    <img src="img/couple1.png" alt="情侶頭貼1" />
+    <img src="img/couple2.png" alt="情侶頭貼2" />
+    <img src="img/couple3.png" alt="情侶頭貼3" />
+    <img src="img/couple4.png" alt="情侶頭貼4" />
+    <img src="img/couple5.png" alt="情侶頭貼5" />
+    <img src="img/couple6.png" alt="情侶頭貼6" />
+    <img src="img/couple7.png" alt="情侶頭貼7" />
+    <img src="img/couple8.png" alt="情侶頭貼8" />
+    <img src="img/couple9.png" alt="情侶頭貼9" />
+    <img src="img/couple10.png" alt="情侶頭貼10" />
+  </div>
+</section>
+
+<section id="wallpapers" class="gallery">
+  <h2>📱 一解鎖，就被治癒</h2>
+  <p style="text-align:center; color:#555; margin-bottom:1.5rem;">溫柔色調，讓每次看手機都成為一種享受（100多款風格任選）</p>
+  <div class="grid">
+    <img src="img/wallpaper1.png" alt="手機壁紙1" />
+    <img src="img/wallpaper2.png" alt="手機壁紙2" />
+    <img src="img/wallpaper3.png" alt="手機壁紙3" />
+    <img src="img/wallpaper4.png" alt="手機壁紙4" />
+    <img src="img/wallpaper5.png" alt="手機壁紙5" />
+    <img src="img/wallpaper6.png" alt="手機壁紙6" />
+    <img src="img/wallpaper7.png" alt="手機壁紙7" />
+    <img src="img/wallpaper8.png" alt="手機壁紙8" />
+    <img src="img/wallpaper9.png" alt="手機壁紙9" />
+    <img src="img/wallpaper10.png" alt="手機壁紙10" />
+  </div>
+</section>
+
+<section id="pcwallpapers" class="gallery">
+  <h2>💻 打開電腦，靈感滿載</h2>
+  <p style="text-align:center; color:#555; margin-bottom:1.5rem;">簡約與創意並存，點亮你的桌面風格（pad也適用）</p>
+  <div class="grid">
+    <img src="img/pcwallpaper1.png" alt="電腦壁紙1" />
+    <img src="img/pcwallpaper2.png" alt="電腦壁紙2" />
+    <img src="img/pcwallpaper3.png" alt="電腦壁紙3" />
+    <img src="img/pcwallpaper4.png" alt="電腦壁紙4" />
+    <img src="img/pcwallpaper5.png" alt="電腦壁紙5" />
+    <img src="img/pcwallpaper6.png" alt="電腦壁紙6" />
+    <img src="img/pcwallpaper7.png" alt="電腦壁紙7" />
+    <img src="img/pcwallpaper8.png" alt="電腦壁紙8" />
+    <img src="img/pcwallpaper9.png" alt="電腦壁紙9" />
+    <img src="img/pcwallpaper10.png" alt="電腦壁紙10" />
+  </div>
+</section>
+
+<section id="sketches" class="gallery">
+  <h2>✏️ 畫一筆日常，留一點童真</h2>
+  <p style="text-align:center; color:#555; margin-bottom:1.5rem;">簡單線條，純粹美感，適合當作表情包、插畫收藏（共14份）</p>
+  <div class="grid">
+    <img src="img/sketch1.png" alt="素描1" />
+    <img src="img/sketch2.png" alt="素描2" />
+    <img src="img/sketch3.png" alt="素描3" />
+    <img src="img/sketch4.png" alt="素描4" />
+    <img src="img/sketch5.png" alt="素描5" />
+    <img src="img/sketch6.png" alt="素描6" />
+    <img src="img/sketch7.png" alt="素描7" />
+    <img src="img/sketch8.png" alt="素描8" />
+    <img src="img/sketch9.png" alt="素描9" />
+    <img src="img/sketch10.png" alt="素描10" />
+  </div>
+</section>
+
+  <section id="about" class="about">
+    <h2>👩 關於我 About</h2>
+    <p>這裡是 xiaogou.w，一個喜歡可愛插畫與極簡美學的創作者。這個網站會不定期更新免費頭像與壁紙資源，歡迎收藏與分享！</p>
+  <ul style="margin-top:1.5rem; text-align:center; list-style:none; padding:0;">
+    <li>Instagram：<a href="https://instagram.com/xiaogou.w" target="_blank" rel="noopener">@xiaogou.w</a></li>
+  </ul>
+<a href="https://t.me/xiaogouw99" target="_blank" rel="noopener" class="social-button">
+     Telegram：@xiaogouw99
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2025 xiaogou.w ｜ 版權所有</p>
+  </footer>
+</body>
+</html>
